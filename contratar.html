@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes dos Serviços</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 15px 0;
+        }
+        
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #ffc107;
+        }
+        
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        h2 {
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        footer .contato p {
+            margin: 5px 0;
+        }
+        
+        footer .redes-sociais a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 5px;
+            transition: color 0.3s;
+        }
+        
+        footer .redes-sociais a:hover {
+            color: #ffc107;
+        }
+        
+        .logo img {
+            opacity: 0.3;
+        }
+        
+        .btn-contratar {
+            background-color: #ffc107;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .btn-contratar:hover {
+            background-color: #ffca28;
+        }
+        
+        .btn-pagamento {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        
+        .btn-pagamento:hover {
+            background-color: #218838;
+        }
+        
+        .pagamento-info {
+            text-align: left;
+            margin-top: 20px;
+        }
+        
+        .pagamento-info label {
+            font-weight: bold;
+        }
+        
+        .pagamento-info input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        
+        .pagamento-info button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        
+        .pagamento-info button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="C:\Users\Moises Freitas\OneDrive\Área de Trabalho\Desafio\dedasdasdasd.png" alt="Logo da empresa">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+
+                    <li><a href="#servico1">Telhados</a></li>
+                    <li><a href="#servico2">Portões</a></li>
+                    <li><a href="#sobre-nos">Sobre Nós</a></li>
+                    <li><a href="Suporte.html">Contato</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="contratar.html" class="btn-contratar">Contratar Serviço</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="servico1">
+        <div class="container">
+            <h2>Serviço 1: Telhados</h2>
+            <p>Construção de telhados de ferro, garantindo durabilidade, resistência e proteção para sua propriedade.</p>
+            <p>Preços a partir de: R$2.500,00</p>
+            <p>Formas de pagamento: Cartão de Crédito, Boleto</p>
+            <button class="btn-pagamento">Realizar Pagamento</button>
+            <div class="pagamento-info" style="display: none;">
+                <h3>Preencha os dados para pagamento:</h3>
+                <form action="#">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email" required><br>
+                    <label for="cartao">Número do Cartão:</label><br>
+                    <input type="text" id="cartao" name="cartao" required><br>
+                    <label for="validade">Data de Validade:</label><br>
+                    <input type="text" id="validade" name="validade" placeholder="MM/AA" required><br>
+                    <button type="submit">Confirmar Pagamento</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="servico2">
+        <div class="container">
+            <h2>Serviço 2: Portões</h2>
+            <p>Instalação de portões basculantes, oferecendo uma solução prática, segura e elegante para o acesso e proteção de residências, empresas e estabelecimentos comerciais.</p>
+            <p>Preços a partir de: R$ 5.000,00</p>
+            <p>Formas de pagamento: Cartão de Crédito, Boleto</p>
+            <button class="btn-pagamento">Realizar Pagamento</button>
+            <div class="pagamento-info" style="display: none;">
+                <h3>Preencha os dados para pagamento:</h3>
+                <form action="#">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email" required><br>
+                    <label for="cartao">Número do Cartão:</label><br>
+                    <input type="text" id="cartao" name="cartao" required><br>
+                    <label for="validade">Data de Validade:</label><br>
+                    <input type="text" id="validade" name="validade" placeholder="MM/AA" required><br>
+                    <button type="submit">Confirmar Pagamento</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="contato">
+                <h3>Contato</h3>
+                <p>E-mail: contato@seuecommerce.com</p>
+                <p>Telefone: (15) 99832-3920</p>
+            </div>
+            <div class="redes-sociais">
+                <h3>Redes Sociais</h3>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Adicione este script após o seu HTML
+        const btnPagamento = document.querySelectorAll('.btn-pagamento');
+        const servico1Preco = 2500; // Preço do serviço 1
+        const servico2Preco = 5000; // Preço do serviço 2
+        let total = 0;
+
+        btnPagamento.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const pagamentoInfo = this.nextElementSibling;
+                pagamentoInfo.style.display = 'block';
+            });
+        });
+
+        // Simulação de venda
+        const forms = document.querySelectorAll('.pagamento-info form');
+
+        forms.forEach(form => {
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const nome = this.querySelector('#nome').value;
+                const email = this.querySelector('#email').value;
+                const cartao = this.querySelector('#cartao').value;
+                const validade = this.querySelector('#validade').value;
+
+                // Adiciona o valor do serviço ao total
+                if (this.parentElement.parentElement.id === 'servico1') {
+                    total += servico1Preco;
+                } else if (this.parentElement.parentElement.id === 'servico2') {
+                    total += servico2Preco;
+                }
+
+                // Exibe o valor total atualizado
+                alert(`O pagamento de ${nome} no valor de R$${total.toFixed(2)} foi confirmado!`);
+
+                // Reinicia o valor total para futuras compras
+                total = 0;
+
+                // Você pode redirecionar o usuário para uma página de confirmação aqui
+            });
+        });
+    </script>
+</body>
+
+</html>

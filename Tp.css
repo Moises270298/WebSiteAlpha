@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+#banner {
+    background-color: #343a40;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#banner h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+#form-busca {
+    margin-bottom: 20px;
+}
+
+#form-busca input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+#form-busca button {
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#form-busca button:hover {
+    background-color: #ffca28;
+}
+
+#servicos {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.servico {
+    margin-bottom: 40px;
+}
+
+.servico h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.servico img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.servico img:hover {
+    transform: scale(1.05);
+}
+
+.servico p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .contato p {
+    margin: 5px 0;
+}
+
+footer .redes-sociais a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+footer .redes-sociais a:hover {
+    color: #ffc107;
+}
+
+.logo img {
+    opacity: 0.3;
+}
+
+.btn-contratar {
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-contratar:hover {
+    background-color: #ffca28;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption p {
+    margin-bottom: 0;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.carousel-item img:hover {
+    opacity: 0.7;
+}

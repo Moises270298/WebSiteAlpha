@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 15px 0;
+        }
+        
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #ffc107;
+        }
+        
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        h2 {
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        footer .contato p {
+            margin: 5px 0;
+        }
+        
+        footer .redes-sociais a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 5px;
+            transition: color 0.3s;
+        }
+        
+        footer .redes-sociais a:hover {
+            color: #ffc107;
+        }
+        
+        .logo img {
+            opacity: 0.3;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            margin-bottom: 19px;
+        }
+        
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 20px;
+            resize: none;
+        }
+        
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="C:\Users\Moises Freitas\OneDrive\Área de Trabalho\Desafio\dedasdasdasd.png" alt="Logo da empresa">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#sobre-nos">Sobre Nós</a></li>
+                    <li><a href="Suporte.html">Suporte</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="contratar.html" class="btn-contratar">Contratar Serviço</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <form action="https://formspree.io/f/xpzkjjel" method="POST">
+
+
+            <input type="email" id="email" name="email" required placeholder="exemplo@email.com">
+
+
+            <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <section id="sobre-nos">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Nossa empresa, E-commerce de Contratação de Mão de Obra, é especializada na prestação de serviços relacionados à construção civil. Com uma equipe de profissionais altamente qualificados e experientes, oferecemos soluções completas para as
+                necessidades dos nossos clientes. Trabalhamos com a construção de telhados de ferro e a instalação de portões basculantes, garantindo qualidade, segurança e satisfação.
+            </p>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="contato">
+                <h3>Contato</h3>
+                <p>E-mail: contato@seuecommerce.com</p>
+                <p>Telefone: (15) 99832-3920</p>
+            </div>
+            <div class="redes-sociais">
+                <h3>Redes Sociais</h3>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
