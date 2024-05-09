@@ -1,0 +1,152 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-image: url('https://imgs.search.brave.com/tp6TVdaTmdaBhezhlOdyoxatEasHWRfBSokIbbu1inQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tYXBh/LWRhLW9icmEtcHJv/ZHVjYW8uczMuYW1h/em9uYXdzLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyNC8w/My9BLXZlcnRpY2Fs/aXphY2FvLWRhcy1j/aWRhZGVzLWUtby1w/cm9jZXNzby1kZS10/cmFuc2Zvcm1hY2Fv/LWRvLWNlbmFyaW8t/dXJiYW5vLi0zODd4/MjQwLnBuZw');
+    /* Substitua pelo caminho da sua imagem */
+    background-repeat: no-repeat;
+    /* Impede a repetição da imagem */
+    background-size: cover;
+    /* Garante que a imagem cubra toda a área do elemento */
+    background-position: center;
+    /* Centraliza a imagem */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.group {
+    position: relative;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 40px;
+    /* Diminui o espaçamento interno do formulário */
+    border-radius: 20px;
+    background-color: black;
+    margin-bottom: 20px;
+    /* Adiciona espaçamento entre os formulários */
+}
+
+.form p {
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    color: white;
+}
+
+.container-1 {
+    padding-top: 30px;
+}
+
+.main-input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    width: 185px;
+    border: none;
+    border-bottom: 1px solid #6c6c6c;
+    background: transparent;
+    color: #ffffff;
+}
+
+.main-input:focus {
+    outline: none;
+    border-bottom-color: #42ff1c;
+}
+
+.lebal-email {
+    color: #999999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+}
+
+.main-input:focus~.lebal-email,
+.main-input:valid~.lebal-email {
+    top: -20px;
+    font-size: 14px;
+    color: #42ff1c;
+}
+
+.highlight-span {
+    position: absolute;
+    height: 60%;
+    width: 0px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+#form-cadastro {
+    display: none;
+}
+
+.main-input:focus~.highlight-span {
+    animation: input-focus 0.3s ease;
+}
+
+@keyframes input-focus {
+    from {
+        background: #42ff1c;
+    }
+    to {
+        width: 185px;
+    }
+}
+
+.submit {
+    margin-top: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cadastro-btn {
+    margin-top: 10px;
+    /* Adicione um espaço entre os botões */
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.cadastro-btn:hover {
+    background-color: #38ff00;
+}
+
+.submit {
+    margin-top: 10px;
+    /* Adicione um espaço entre os botões */
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #38ff00;
+}

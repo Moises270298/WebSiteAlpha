@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form" id="form-login">
+            <h2>Login</h2>
+            <form action="processar_login.php" method="POST">
+                <div class="group">
+                    <input type="email" id="email" name="email" class="main-input" required>
+                    <span class="highlight-span"></span>
+                    <label for="email" class="lebal-email">Email</label>
+                </div>
+                <div class="group">
+                    <input type="password" id="senha" name="senha" class="main-input" required>
+                    <span class="highlight-span"></span>
+                    <label for="senha" class="lebal-email">Senha</label>
+                </div>
+                <button type="submit" class="submit">Login</button>
+                <button type="button" onclick="mostrarFormCadastro()" class="submit cadastro-btn">Cadastre-se</button>
+            </form>
+        </div>
+
+        <div class="form" id="form-cadastro">
+            <h2>Cadastro</h2>
+            <form action="processar_login.php" method="POST">
+                <div class="group">
+                    <input type="email" id="cadastro_email" name="cadastro_email" class="main-input" required>
+                    <span class="highlight-span"></span>
+                    <label for="cadastro_email" class="lebal-email">Email</label>
+                </div>
+                <div class="group">
+                    <input type="password" id="cadastro_senha" name="cadastro_senha" class="main-input" required>
+                    <span class="highlight-span"></span>
+                    <label for="cadastro_senha" class="lebal-email">Senha</label>
+                </div>
+                <button type="submit" class="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+
+</html>

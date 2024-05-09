@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce de Contratação de Mão de Obra</title>
+    <link rel="stylesheet" href="Tp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="C:\Users\Moises Freitas\OneDrive\Área de Trabalho\Desafio\dedasdasdasd.png" alt="Logo da empresa">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre-nos">Sobre Nós</a></li>
+                    <li><a href="Suporte.html">Contato</a></li>
+                    <li><a href="contratar.html">Contratar Serviço</a></li>
+                    <!-- Novo botão -->
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="banner">
+        <div class="container">
+            <h2>Encontre os melhores serviços para suas necessidades!</h2>
+            <form action="#" id="form-busca" onsubmit="return validarBusca()">
+                <input type="text" id="busca" placeholder="Digite o serviço desejado">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <div class="container">
+            <h2>Serviços</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" onclick="mostrarDescricao('telhado')">
+                        <img class="d-block w-100" src="telhado-quadra.jpeg" alt="Serviço 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Nossa empresa oferece serviços especializados na construção de telhados de ferro, garantindo durabilidade, resistência e proteção para sua propriedade.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" onclick="mostrarDescricao('portao')">
+                        <img class="d-block w-100" src="portao-madeira.jpg" alt="Serviço 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Nosso serviço de instalação de portão basculante oferece uma solução prática, segura e elegante para o acesso e proteção de residências, empresas e estabelecimentos comerciais.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-nos">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Nossa empresa, E-commerce de Contratação de Mão de Obra, é especializada na prestação de serviços relacionados à construção civil. Com uma equipe de profissionais altamente qualificados e experientes, oferecemos soluções completas para as
+                necessidades dos nossos clientes. Trabalhamos com a construção de telhados de ferro e a instalação de portões basculantes, garantindo qualidade, segurança e satisfação.
+            </p>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="contato">
+                <h3>Contato</h3>
+                <p>E-mail: contato@seuecommerce.com</p>
+                <p>Telefone: (15) 99832-3920</p>
+            </div>
+            <div class="redes-sociais">
+                <h3>Redes Sociais</h3>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
